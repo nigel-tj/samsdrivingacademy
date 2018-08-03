@@ -1,0 +1,868 @@
+/*
+Theme Name: James Killar
+Theme URI: http://drivingschoolwebsite.org/
+Author: Forid Pathan
+Author URI: http://themexcoder.com/
+Description: James Keller Driving School was founded to provide safe and professional driving instruction to new drivers in the Washington, DC area. Years later, we are one of the most well-respected local driving schools in the area. We serve hundreds of students each year and our fully licensed driving school is trusted by adults and teenagers alike to provide a patient, courteous, and safe driving experience. Driving is a serious activity that demands responsibility, know-how, and attentiveness from drivers. Our instructors are highly qualified and each of us is skilled in helping even the most nervous of drivers get over their stress and discomfort. Most importantly, we take pride in the quality drivers educated by our school. We want to keep Washington, DC streets safe as well as teen and adult drivers alike.
+Tag:
+
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+
+html {
+  overflow-x: hidden;
+}
+body { 
+  background: rgba(0, 0, 0, 0) url("img/body-bg.jpg") no-repeat scroll center center;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: 'Oswald';
+	overflow-x: hidden;
+}
+a {
+  transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+}
+p {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(102, 102, 102);
+  line-height: 1.714;
+}
+
+/***********
+LEFT MENU
+***********/
+.navbarheader a {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 254);
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.right-call a {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.333;
+  -moz-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -webkit-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -ms-transform: matrix( 0.99996827511818,0,0,1,0,0);
+}
+
+
+.single-team img {
+    border-right: 6px solid rgb(195, 159, 119);
+}
+.aside {
+  min-width: 350px;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #242424;
+  font-family: Helvetica, Arial, sans-serif;
+  border-right: 1px solid #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  width: 0px;
+  min-width: 0px;
+  overflow: hidden;
+  transition: 0.35s width ease, 0.35s min-width ease;
+}
+
+.aside .aside-header .close {
+  float: right;
+  cursor: pointer;
+}
+
+.aside .aside-contents {
+  padding: 55px;
+  padding-bottom: 1em;
+}
+.aside .close {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 1;
+  padding-left: 55px;
+  padding-top: 29px;
+  position: absolute;
+}
+.aside-menu ul li {
+  border-bottom: 1px solid #c39f77;
+}
+.menu-address p, .menu-address a, .menu-address li {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  -moz-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -webkit-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -ms-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  overflow: hidden;
+}
+.menu-address span:first-child {
+  float: left;
+}
+.menu-address span:last-child {
+  float: right;
+  width: 92%;
+}
+.menu-address span i {
+  color: #c39f77;
+}
+.menu-address {
+  padding: 20px 0;
+}
+.social-ff li:last-child a {
+  margin: 0;
+}
+.social-ff {
+  border-bottom: 1px solid #c39f77;
+}
+.social-ff li a {
+  color: #fff;
+  font-size: 19px;
+  margin-right: 35px;
+}
+
+.aside.in {
+  width: 15%;
+  min-width: 395px;
+}
+
+.aside-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+  transition: 0.2s opacity ease;
+  opacity: 0;
+  display: none;
+}
+
+.aside-backdrop.in {
+  display: block;
+  opacity: 0.5;
+}
+.aside-menu ul a {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 254);
+  text-transform: uppercase;
+  display: block;text-decoration: none;
+  line-height: 3.625;
+}
+
+
+
+/**********
+HEADER
+***********/
+.main-header {
+  background: rgba(0, 0, 0, 0) url("../../uploads/2017/11/bg1.jpg") no-repeat scroll center center;
+  min-height: 1080px;
+  position: relative;
+  padding: 70px 0 80px;
+}
+.header-body h4 {
+  font-size: 24px;
+  font-family: 'Courgette', cursive;
+  color: rgb(195, 159, 119);
+  line-height: 1.5;
+  margin: 0;
+}
+.header-body h2 {
+  color: rgb(255, 255, 255);
+  font-size: 41px;
+  font-weight: bold;
+  line-height: 1.22;
+  margin: 0;
+  padding: 20px 0 35px;
+}
+a.default-btn, .submitbtn > input {
+  background-color: rgb(195, 159, 119);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-family: "Montserrat",sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  height: 55px;
+  line-height: 3.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 288px;
+  border: none;
+}
+a.default-btn:hover, .submitbtn > input:hover {
+	background: #fff;
+	color: #000;
+}
+.scrool-down > a {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.scrool-down {
+  bottom: 80px;
+  left: 48%;
+  position: absolute;
+}
+.header-body img {
+  margin: 90px 0 110px;
+}
+
+.home-about::after {
+  background: #c39f77 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 221px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.home-about {
+  padding: 55px 0;
+  position: relative;
+}
+
+.section-sales {
+  padding: 85px 0 80px;
+}
+.section-head {
+	padding-bottom: 55px;
+}
+.section-head h2 {
+  font-size: 30px;
+  font-family: "Oswald";
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+.section-head p {
+  font-size: 20px;
+  font-family: "Courgette";
+  color: rgb(195, 159, 119);
+  line-height: 1.3;
+  margin: 0;
+}
+.single-about h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.single-about h3 a {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(195, 159, 119);
+  line-height: 1.333;
+  font-weight: normal;
+}
+.sub-about {
+  background: #fff none repeat scroll 0 0;
+  padding: 10px 20px;
+}
+.pro-sale-img {
+  float: left;
+}
+.sale-dist {
+  padding-left: 98px;
+}
+.sale-dist h2 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(68, 68, 68);
+  line-height: 1.333;
+}
+
+
+.home-setisfectory {
+  background: rgba(0, 0, 0, 0) url("http://theme.drivingschoolwebsite.org/wp-content/themes/James%20Killar/img/img-4.png") no-repeat scroll 0 0;
+  display: table-cell !important;
+  height: 428px;
+  vertical-align: middle;
+  width: 99999px;
+}
+.setisfectory h1 {
+  font-size: 29.269px;
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  -moz-transform: matrix( 1.22997984742414,0,0,1.22997984742414,0,0);
+  -webkit-transform: matrix( 1.22997984742414,0,0,1.22997984742414,0,0);
+  -ms-transform: matrix( 1.22997984742414,0,0,1.22997984742414,0,0);
+}
+
+.setisfectory p {
+  font-size: 30px;
+  font-family: "Courgette";
+  color: rgb(195, 159, 119);
+  line-height: 35px;
+}
+
+
+.home-prices {
+  background: #f5f5f5;
+  padding: 80px 0 50px;
+}
+.single-price {
+  background: rgba(0, 0, 0, 0) url("img/img-18.png") no-repeat scroll 0 0;
+  display: table-cell;
+  height: 425px;
+  vertical-align: middle;
+  width: 263px;
+}
+.single-price h3 {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.single-price .price h2 {
+  font-size: 48px;
+  font-family: "Montserrat";
+  color: rgb(195, 159, 119);
+  font-weight: bold;
+  margin: 0;
+  line-height: 48px;
+}
+.single-price ul li {
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: rgb(102, 102, 102);
+  line-height: 2.4;
+}
+.single-price a.default-btn {
+  width: 160px;
+  height: 40px;
+  font-size: 13px;
+  line-height: 3.32;
+}
+
+.price .price {
+  padding: 35px 0;
+  position: relative;
+}
+.price .price::after {
+  background: #c39f77 none repeat scroll 0 0;
+  bottom: 17.5px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 43%;
+  position: absolute;
+  width: 50px;
+}
+.price .price::before {
+  background: #c39f77 none repeat scroll 0 0;
+  top: 17.5px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 43%;
+  position: absolute;
+  width: 50px;
+}
+.reviews a.google-btn {
+  border: 1px solid #fff;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 3.5;
+  padding: 0 25px;
+  text-transform: uppercase;
+}
+.reviews a.default-btn {
+  margin-right: 20px;
+  padding: 0 30px;
+  width: auto;
+}
+.reviews a.default-btn:hover {
+  background: #333 none repeat scroll 0 0;
+  color: #fff;
+}
+.reviews a.default-btn img {
+  display: inline-block;
+  margin-top: -10px;
+}
+.google-btn i {
+  float: left;
+  font-size: 30px;
+  line-height: 1.4;
+  padding-right: 5px;
+  padding-top: 4px;
+}
+.google-btn span {
+  display: inline-block;
+}
+.home-setisfectory.reviews {
+  background: rgba(0, 0, 0, 0) url("http://theme.drivingschoolwebsite.org/wp-content/themes/James%20Killar/img/img-5.png") no-repeat scroll 0 0;
+  display: table-cell;
+  height: 440px;
+  vertical-align: middle;
+  width: 99999px;
+}
+.reviews a.google-btn:hover {
+  background: rgb(195, 159, 119);
+  border: 1px solid rgb(195, 159, 119);
+}
+
+.address-section {
+  background: #c39f77 none repeat scroll 0 0;
+  padding: 40px 0;
+}
+.single-address p {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: table-cell;
+  font-size: 30px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  width: 80px;
+}
+address.sub-address {
+  display: table-cell;
+  padding-left: 20px;
+}
+address.sub-address strong {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  -moz-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -webkit-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -ms-transform: matrix( 0.99996827511818,0,0,1,0,0);
+}
+address.sub-address {
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  -moz-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -webkit-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -ms-transform: matrix( 0.99996827511818,0,0,1,0,0);
+}
+
+address.sub-address a {
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  -moz-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -webkit-transform: matrix( 0.99996827511818,0,0,1,0,0);
+  -ms-transform: matrix( 0.99996827511818,0,0,1,0,0);
+}
+
+
+.home-contact {
+  background: url(img/footer-banner.jpg);
+  padding: 65px 0 55px;
+}
+.home-contact .section-head h2 {
+  color: #fff;
+}
+.form-group .form-control {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #585655;
+  border-radius: 0;
+  color: rgb(187, 187, 187);
+  font-family: "Open Sans";
+  font-size: 14px;
+  height: 50px;
+  line-height: 2;
+  min-width: 100%;
+  max-width: 100%;
+}
+.form-group textarea.form-control {
+  min-height: 120px;
+}
+.copyright-add {
+  padding-top: 70px;
+}
+.social-sp li a {
+  color: #fff;
+  font-size: 20px;
+}
+.copyright p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(204, 204, 204);
+  line-height: 1.714;
+  display: inline-block;
+  margin: 0;
+}
+.home-video {
+  padding-bottom: 25px;
+}
+.mainmenu.navbar-default {
+  background: #232120 none repeat scroll 0 0;
+}
+.topnav-area {
+  background: #1e1d1c none repeat scroll 0 0;
+  padding-bottom: 6px;
+}
+.topnav-area .menu-address span:last-child {
+  float: none;
+  padding-left: 12px;
+  width: auto;
+}
+.menu-address ul li:first-child {
+  margin-right: 20px;
+}
+.topnav-area .menu-address, .topnav-area .menu-address ul {
+  padding: 0;
+  margin: 0;
+}
+.topnav-area .menu-address {
+  padding-top: 10px;
+}
+.topnav .social-sp {
+  padding-top: 6px;
+}
+.navbar-default .navbar-nav > li > a {
+  border-bottom: 1px solid transparent;
+  color: rgb(255, 255, 254);
+  font-family: "Montserrat";
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 10px 0 5px;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li.current-menu-item > a, .navbar-default .navbar-nav > li > a:hover {
+  background-color: transparent;
+  border-color: #c39f77;
+  color: #fff;
+}
+.navbarmenu .nav.navbar-nav > li {
+      padding: 21px 30px;
+}
+.navbarmenu .nav.navbar-nav > li:first-child {
+  padding-left: 0;
+}
+.navbarmenu .nav.navbar-nav > li:last-child {
+  padding-right: 5px;
+}
+.collapse.navbar-collapse {
+  padding: 0;
+}
+
+
+
+.about {
+  padding: 53px 0 80px;
+}
+.navbar-default .navbar-brand {
+  display: inline-block;
+  height: auto;
+  margin: 23px 50px 0 0;
+  padding: 0;
+  width: auto;
+}
+.abt-right p {
+  font-size: 15px;
+}
+.abt-right li a {
+  text-align: center;
+  width: 243px;
+}
+.abt-right li a.price-btn.default-btn {
+  background: #232120 none repeat scroll 0 0;
+}
+.abt-right li a.price-btn.default-btn:hover {
+  background: rgb(195, 159, 119);
+}
+.abt-right li a.default-btn:hover {
+  color: #fff;
+  background: #232120 none repeat scroll 0 0;
+}
+.abt-right ul {
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+.what-left h3, .what-right h3 {
+  font-size: 30px;
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 50px;
+}
+.what-left li {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 1.333;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  position: relative;
+}
+.what-left li:last-child {
+  padding-bottom: 0;
+}
+.what-left li::before {
+  content: "";
+  font-family: fontawesome;
+  font-size: 22px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+}
+.what-right li {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(221, 221, 221);
+  line-height: 1.333;
+  -moz-transform: matrix( 0.99957835558679,0,0,1,0,0);
+  -webkit-transform: matrix( 0.99957835558679,0,0,1,0,0);
+  -ms-transform: matrix( 0.99957835558679,0,0,1,0,0);
+}
+.what-we-do {
+  position: relative;
+}
+.whatwe .whatl:after {
+  background: #c39f77 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 350%;
+  z-index: -1;
+}
+.what-right {
+  padding-left: 33px;
+}
+.whatwe .whatr::after {
+  background: #232120 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200%;
+  z-index: -1;
+}
+.what-right li span {
+  display: inline-block;
+  padding-left: 31px;
+}
+.what-right li img {
+  float: left;
+}
+.what-right li {
+  overflow: hidden;
+  padding-bottom: 45px;
+}
+.what-right li:last-child {
+  padding-bottom: 0;
+}
+.what-left ul, .what-right ul {
+  margin-bottom: 0;
+}
+.whatwe .whatl, .whatwe .whatr {
+  min-height: 502px;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  position: relative;
+}
+.team-menber .left {
+  float: left;
+  padding-right: 20px;
+}
+.team-menber .team-dist h3 {
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(195, 159, 119);
+  line-height: 1;
+  -moz-transform: matrix( 1,0,0,0.99993005307803,0,0);
+  -webkit-transform: matrix( 1,0,0,0.99993005307803,0,0);
+  -ms-transform: matrix( 1,0,0,0.99993005307803,0,0);
+  margin-top: 0;
+}
+.team-menber .team-dist p {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(102, 102, 102);
+  line-height: 1.714;
+  -moz-transform: matrix( 1,0,0,0.99993005307804,0,0);
+  -webkit-transform: matrix( 1,0,0,0.99993005307804,0,0);
+  -ms-transform: matrix( 1,0,0,0.99993005307804,0,0);
+}
+.about-team {
+  padding: 70px 0 59px;
+}
+.single-team {
+  margin-bottom: 52px;
+}
+
+.contact-map iframe{
+    width: 100%;
+    display: block;
+    pointer-events: none;
+    position: relative; /* IE needs a position other than static */
+}
+.contact-map iframe.clicked{
+    pointer-events: auto;
+}
+.edu-dist h3 {
+  color: rgb(35, 33, 32);
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  margin-top: 28px;
+}
+.edu-dist p {
+  font-size: 15px;
+  margin-bottom: 25px;
+  min-height: 100px;
+}
+.edu-dist a {
+  width: 195px;
+}
+.edusubdist .abt-right {
+  margin-bottom: 57px;
+  margin-top: 30px;
+}
+.pricedist {
+  margin-top: 58px;
+}
+.pricedist img {
+  margin-bottom: 33px;
+}
+.pricedist p {
+  margin-bottom: 30px;
+}
+
+.menu-address.sc ul li:first-child {
+  margin: 0;
+}
+.menu-address.sc ul li {
+  padding-bottom: 20px;
+  display: block;
+}
+.menu-address.sc ul li a {
+  display: block;
+}
+div.wpcf7-validation-errors {
+  border: 2px solid #c39f77;
+  color: #fff;
+  text-align: center;
+}
+div.wpcf7-mail-sent-ok {
+  border: 2px solid #398f14;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/********************
+SITE ORIGIN EDIT
+*********************/
+.so-panel {
+  margin-bottom: 0 !important;
+}
+.single-sales > div >  div > div > div:first-child {
+  float: left;
+}
+.single-sales > div >  div > div > div:last-child {
+  margin-top: -15px;
+}
+.panel-grid {
+  margin: 0 !important;
+}
+.single-team > div > div > div > div:first-child {
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .whatwe #pgc-w58f662af0e313-0-0 {
+    width: 66.7%;
+  }
+  .whatwe #pgc-w58f662af0e313-0-1 {
+    width: 33.333%;
+  }
+}
+
+.setisfectory a.default-btn {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.sub-menu {
+  list-style: outside none none;
+  padding: 20px 0 0;
+  position: absolute;
+  width: 220px;
+  display: none;
+  z-index: 9999;
+}
+.sub-menu li {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  padding: 10px 20px;
+}
+.sub-menu li a {
+  color: #323232;
+}
+.navbar-nav > li:hover .sub-menu {
+  display: block;
+}
+.sub-menu li:hover, .sub-menu li:hover a, .sub-menu li.current-menu-item {
+  color: #ec6500;
+}
+.sub-menu li.current-menu-item a {
+  color: #ec6500;
+}
+@media (max-width: 767px) {
+.sub-menu {
+  position: static;
+  width: 100%;
+  padding-left: 20px;
+  display: block;
+}
+}
